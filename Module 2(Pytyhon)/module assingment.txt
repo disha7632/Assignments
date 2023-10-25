@@ -1,0 +1,5 @@
+Ques-1 How memory is managed in Python?
+
+Ques-2 What is the purpose continue statement in python?
+
+Ques-3 What are negative indexes and why are they used?
