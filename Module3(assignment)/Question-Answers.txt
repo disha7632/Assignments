@@ -1,0 +1,154 @@
+1) What is List? How will you reverse a list?
+
+ -  A list is a fundamental data structure in Python that is used to store and manage collections of items. Lists are ordered,       mutable (you can change their contents), and can contain elements of different data types, including numbers, strings,       and other objects. Lists are defined by enclosing a comma-separated sequence of elements within square brackets [ ]
+
+# Using the reverse() method: The reverse() method is a built-in method for lists that reverses the elements in-place                                                              (modifies the original list).
+
+# Using slicing: You can create a reversed copy of the list using slicing.
+
+# Using the reversed() function: The reversed() function returns a reverse iterator, which can be converted back to a list                                                          using list().
+  
+2) How will you remove last object from a list?
+    Suppose list1 is [2, 33, 222, 14, and 25], what is list1 [-1]?
+
+- To remove the last object from a list in Python, you can use the pop() method with the index -1, which refers to the last   element in the list. Here's how you can do it:
+  
+  list1 = [2, 33, 222, 14, 25]
+  list1.pop()  # Removes the last element from the list
+
+  After executing the pop() method, the list1 will no longer contain the last element, and the list will be [2, 33, 222, 14].
+
+ Regarding the expression list1[-1], it is used to access the last element of the list without removing it. In your example,  list1[-1] will return 25, which is the last element of the list1.
+
+3) Differentiate between append () and extend () methods?
+
+- In Python, both append() and extend() are list methods used to add elements to a list, but they work differently:
+
+append() Method:
+
+The append() method is used to add a single element (item) to the end of a list.
+
+It takes a single argument, which is the item you want to add to the list.
+
+After using append(), the list will contain the newly added item as a single element.
+
+extend() Method:
+
+The extend() method is used to add multiple elements to the end of a list.
+
+It takes an iterable (e.g., a list, tuple, or string) as an argument, and it appends each element of the iterable to the list.
+
+After using extend(), the list will contain all the elements from the iterable.
+
+Here's a summary of the key differences:
+
+append() adds a single item to the end of a list, while extend() adds multiple items from an iterable to the end of a list.
+append() modifies the list by adding a single item as a new element, while extend() appends each element from the iterable.
+append() is more suitable when you want to add a single item to a list, and extend() is useful for adding multiple items from an iterable.
+extend() can be used with any iterable, not just lists, whereas append() only adds a single item.
+Both methods operate in-place, so they modify the original list and do not return a new list.
+In summary, choose between append() and extend() based on whether you want to add a single item or multiple items to a list.
+
+4) How will you compare two lists? 
+
+- You can compare two lists in Python to determine if they are equal or if one is greater, less than, or not equal to the other. To compare lists, you can use various methods and operators. Here are some common ways to compare lists:
+
+Equality (==): You can use the equality operator == to check if two lists are equal, meaning they have the same elements in the same order.
+
+Inequality (!=): To check if two lists are not equal, you can use the inequality operator !=.
+Greater Than (>): You can use the greater-than operator > to compare two lists based on their lexicographical order. It checks if the first list is greater (comes after) than the second list.
+
+Less Than (<): Similarly, you can use the less-than operator < to check if the first list is less (comes before) than the second list.
+
+Greater Than or Equal To (>=) and Less Than or Equal To (<=): These operators >= and <= can be used to check if one list is greater than or equal to or less than or equal to the other list.
+
+These comparison methods and operators allow you to determine the relationship between two lists based on their contents and order. The specific comparison you choose depends on the comparison criteria you need for your particular use case. 
+
+5) How will you create a dictionary using tuples in python? 
+
+- In Python, you can create a dictionary using tuples as keys or values. Here's how you can do it:
+Using tuples as keys:
+You can use tuples as keys to create a dictionary. Tuples are hashable, so they can be used as keys in a dictionary. Each key-value pair in the dictionary consists of a tuple as the key and a corresponding value.
+Using tuples as values:
+You can also use tuples as values in a dictionary. Each key in the dictionary maps to a tuple as its value.
+You can perform various dictionary operations, such as adding, updating, and deleting key-value pairs when using tuples as keys or values, just as you would with regular dictionaries. Tuples are useful when you need to represent composite keys or values in your dictionary.
+
+6) How Do You Traverse Through A Dictionary Object In Python?
+
+- You can traverse through a dictionary object in Python using a variety of methods. The most common ways to iterate through a dictionary are:
+Using a for loop with the .items() method:
+This method allows you to iterate through both the keys and values of a dictionary simultaneously.
+Using a for loop with the .keys() method:
+If you only want to iterate through the keys of the dictionary, you can use the .keys() method.
+Using a for loop with the .values() method:
+If you only want to iterate through the values of the dictionary, you can use the .values() method.
+Using a for loop to iterate through the dictionary's keys:
+You can directly iterate through the keys of a dictionary without using any methods.
+Using list comprehension:
+You can create a list of key-value pairs and iterate through it using a for loop.
+Using dictionary comprehensions:
+You can use dictionary comprehensions to create a new dictionary based on the existing one.
+Each of these methods allows you to iterate through the key-value pairs of a dictionary, and you can choose the one that best suits your specific needs and coding style.
+
+7) How Do You Check The Presence Of A Key In A Dictionary?
+
+- You can check the presence of a key in a dictionary in Python using several methods:
+Using the in operator:
+You can use the in operator to check if a key exists in a dictionary:
+Using the .get() method:
+The .get() method allows you to specify a default value if the key does not exist in the dictionary. If the key is present, it returns the corresponding value; otherwise, it returns the default value (which can be `None if not specified).
+Using exception handling (try-except):
+You can use a try-except block to handle the KeyError that is raised when a key does not exist in the dictionary:
+Using the .keys() method:
+You can check if a key exists by comparing it to the list of keys obtained from the dictionary using the .keys() method:
+The most common and preferred way to check the presence of a key is using the in operator or the .get() method. These methods are more Pythonic and provide cleaner code for key existence checks.
+
+8) Why Do You Use the Zip () Method in Python?
+
+- The zip() function in Python is used to combine two or more iterable objects (e.g., lists, tuples, or strings) element-wise to create an iterator of tuples. Each tuple contains elements from the input iterables at the same position/index. The primary purposes of using zip() are:
+Iterating through multiple iterables simultaneously: You can use zip() to loop through multiple iterables in parallel. This is particularly useful when you need to perform operations on corresponding elements from different sequences. 
+
+9) How Many Basic Types Of Functions Are Available In Python?
+
+- In Python, there are several types of functions that can be categorized based on their purpose and characteristics. The basic types of functions available in Python include:
+
+Built-in Functions:
+Python provides a wide range of built-in functions that are available for general use. These functions are included as part of the Python standard library and cover various operations, such as print(), len(), max(), min(), range(), and more.
+
+User-Defined Functions:
+These functions are created by the Python programmer to perform specific tasks. You can define your own functions using the def keyword. User-defined functions allow you to encapsulate a block of code into a reusable function.
+
+10) How can you pick a random item from a list or tuple?
+- You can pick a random item from a list or tuple in Python by using the random module, which provides functions for generating random numbers and making random selections. Here's how you can do it:
+Using random.choice():
+The random.choice() function allows you to select a random item from a list or tuple.
+Using random.randrange() with indexing:
+You can use random.randrange() to generate a random index within the range of valid indices for your list or tuple and then access the element at that index.
+Using random.randint() with indexing:
+If you want to pick a random item from a list or tuple and your indices start from 0 and end at len(my_list) - 1, you can use random.randint() to generate a random index.
+Using random.sample() for multiple random items:
+If you want to select multiple random items from a list or tuple without replacement, you can use random.sample(). This function returns a list of unique random items from the input iterable.
+Make sure to import the random module at the beginning of your script or program to use these functions. The choice of method depends on your specific requirements, such as whether you need unique random items or not.
+
+11) How can you pick a random item from a range?
+
+- To pick a random item from a range in Python, you can use the random.randint() function from the random module. The randint() function generates a random integer between two specified endpoints, including both endpoints. Here's how you can do it:
+ random_item will be a random integer between 1 and 100 (inclusive).
+You can adjust the start and end values to define the specific range from which you want to pick a random item. The randint() function will ensure that the selected item falls within that range.
+If you want to pick a random floating-point number within a range, you can use random.uniform() instead:
+In this case, random_item will be a random floating-point number between 0.0 and 1.0. Adjust the start and end values to specify the desired range for floating-point random numbers.
+
+12) How can you get a random number in python?
+
+- The zip() function in Python is used to combine two or more iterable objects (e.g., lists, tuples, or strings) element-wise to create an iterator of tuples. Each tuple contains elements from the input iterables at the same position/index. The primary purposes of using zip() are:
+Iterating through multiple iterables simultaneously: You can use zip() to loop through multiple iterables in parallel. This is particularly useful when you need to perform operations on corresponding elements from different sequences. 
+
+13) How will you set the starting value in generating random numbers?
+
+- In Python, when generating random numbers using the random module, you can set the starting value, or the seed, for the random number generator using the random.seed() function. Setting a seed ensures that the sequence of random numbers is reproducible. If you use the same seed, you will get the same sequence of random numbers each time you run your program. Here's how you can set the starting value:
+
+14) How will you randomizes the items of a list in place? 
+
+- To randomize (shuffle) the items of a list in place, you can use the random.shuffle() function from the random module. This function shuffles the elements of the list randomly, changing the order of the items. Here's how you can use it:
+The random.shuffle() function modifies the original list and does not return a new list. After calling this function, the order of the elements in the list will be randomized.
+Keep in mind that the random.shuffle() function works only with lists. If you need to shuffle other iterable types like tuples, you should first convert them to lists, shuffle them, and then convert them back to the desired type if necessary.
