@@ -1,0 +1,26 @@
+			Module – 1 (SDLC)
+
+
+Ques-1 What is Software?
+
+Ans- In a computer system, the software is basically a set of instructions or commands           that tell a computer what to do. In other words, the software is a computer program         that provides a set of instructions to execute a user’s commands and tell the         computer what to do. 
+
+Ques-2 What are the types of Applications?
+
+Ans- Web allipcation,mobile application,desktop application,server application,
+        cloud application,enterprise application,gaming application,scintific 
+        application,education application,multimedia application,communication
+        application,utility application,internet of things application,finacial
+       and banking application,health care application,nabvigation application.
+
+Ques-3 What is programing?
+
+Ans- Programming refers to a technological process for telling a computer which tasks to         perform in order to solve problems. You can think of programming as a                     collaboration between humans and computers, in which humans create instructions           for a computer to follow (code) in a language computers can understand. 
+
+Ques-4 What is Python?
+
+Ans-  Python is a high-level, interpreted, and general-purpose programming language
+         known for its simplicity and readability. It was created by Guido van Rossum 
+         and first released in 1991. Python is designed to be easy to learn and use, 
+        making it an excellent choice for beginners, but it is also a powerful language
+        that is widely used in various fields of software development
